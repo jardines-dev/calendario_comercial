@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.semana{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap:10px;
+    margin-bottom: 10px;
+    
+    
+}
+.semana div{
+    border: 1px solid #00796b;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #327240;
+    color : white;
+    font-weight: bold;
+}
+.day {
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border : 1px solid #00796b;
+    position: relative;
+}
+
+.day:hover {
+    background-color: #f0f0f0;
+}
+
+.turnos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.turno {
+    margin-bottom: 5px;
+    background-color: #327240;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+.lista{
+    margin: 0;
+}
